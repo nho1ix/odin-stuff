@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   zoom: 1.1;
   margin: 0;
 }
@@ -25,6 +25,10 @@ body {
   font-size: 24px;
   font-weight: 700;
   margin: 20px;
+}
+
+.header > .links {
+  font-size: 16px;
 }
 
 .hero {
@@ -94,10 +98,14 @@ body {
 }
 
 .round-square {
-  border: 3px solid #3882F6;
-  border-radius: 10px;
+  /* border: 3px solid #3882F6; */
+  /* border-radius: 10px; */
   height: 110px;
   justify-content: center;
+  border-radius: 6px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow:  5px 5px 10px #d4d4d4,
+               -5px -5px 10px #ffffff;
 }
 
 .info-con {
@@ -109,6 +117,7 @@ body {
 
 .info-text {
   max-width: 110px;
+  margin-top: 8px;
   font-size: 12px;
   color: #4a4a4a;
 }
@@ -129,48 +138,65 @@ body {
 
 .quote > em {
   display: flex;
+  flex-direction: column;
   color: #1F2937;
   height: 375px;
   font-size: 36px;
   font-weight: 300;
-  max-width: 700px;
+  max-width: 800px;
+  justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: start;
 }
 
 .cta {
+  display: flex;
   justify-content: center;
   padding: 100px;
-  gap: 50px;
 }
 
 .cta-container {
-  background-color: #3882F6;
   display: flex;
+  width: 750px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3882F6;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 35px 80px 35px;
 }
 
 .cta-text {
   color: #F9FAF8;
-  padding: 25px;
-  border-radius: 5px;
+}
+
+.cta-text > h5 {
+  color: #E5E7EB;
+  font-weight: 300;
 }
 
 .cta button {
-  display: flex;
+  background-color: #3882F6;
+  color: white;
+  border-radius: 7px;
+  padding: 7px 25px 7px;
+  font-weight: 700;
+  border: 2px solid white;
+}
 
+.cta button:hover {
+  background-color: #F9FAF8;
+  color: #3882F6;
 }
 
 .footer {
   background-color: #1F2937;
   color: #F9FAF8;
   text-align: center;
+  font-weight: 300;
+  font-size: 12px;
   padding: 20px;
 }
-
-/* .quote > p { */
-/*   margin-left: auto; */
-/*   margin-right: 0; */
-/* } */
 
 ul {
   list-style-type: none;
